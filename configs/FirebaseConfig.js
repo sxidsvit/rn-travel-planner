@@ -1,24 +1,26 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+// import { getAnalytics } from "firebase/analytics";
+
+
+const apiKey = process.env.FIREBASE_API_KEY
+console.log('apiKey: ', apiKey);
+
 const firebaseConfig = {
-  apiKey: "AIzaSyDw_h6J9oAg_2HdpsDpPtsKIn-v0qOV14M",
-  authDomain: "tubeguruji-startups.firebaseapp.com",
-  projectId: "tubeguruji-startups",
-  storageBucket: "tubeguruji-startups.appspot.com",
-  messagingSenderId: "706430327770",
-  appId: "1:706430327770:web:08482219ed803a0aad3ee3",
-  measurementId: "G-40ZKDR29LV"
+  apiKey: `AIzaSyB1YquE6sZxiY5gWL94OLLxEDd22sXRAfQ`,
+  authDomain: "asp-ads.firebaseapp.com",
+  databaseURL: "https://asp-ads.firebaseio.com",
+  projectId: "asp-ads",
+  storageBucket: "asp-ads.appspot.com",
+  messagingSenderId: "252025369069",
+  appId: "1:252025369069:web:2f84c6b7566d919ff577e4"
 };
 
 // Initialize Firebase
 export const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app)
+export const auth = getAuth(app);
 export const db = getFirestore(app);
