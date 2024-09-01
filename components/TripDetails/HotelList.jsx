@@ -4,9 +4,6 @@ import { GetPhotoRef } from '../../services/GooglePlaceApi'
 import HotelCard from './HotelCard';
 
 export default function HotelList({ hotelList }) {
-  console.log('HotelList - start ');
-  console.log('HotelList - hotelList: ', hotelList);
-  console.log('HotelList - end ');
 
   return (
     <View style={{
@@ -25,7 +22,7 @@ export default function HotelList({ hotelList }) {
         showsHorizontalScrollIndicator={false}
         horizontal={true}
         renderItem={({ item, index }) => (
-          <HotelCard item={item} />
+          <HotelCard item={item} key={index} />
         )}
       />
     </View>

@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react'
 import { GetPhotoRef } from '../../services/GooglePlaceApi';
 
 export default function HotelCard({ item }) {
-    console.log('HotelCard - item : ', item);
 
     const [photoRef, setPhotoRef] = useState();
     useEffect(() => {

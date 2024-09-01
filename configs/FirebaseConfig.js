@@ -8,7 +8,7 @@ import { getFirestore } from "firebase/firestore";
 
 
 const apiKey = process.env.FIREBASE_API_KEY
-console.log('apiKey: ', apiKey);
+console.log('FIREBASE_API_KEY - apiKey: ', apiKey);
 
 const firebaseConfig = {
   apiKey: `AIzaSyB1YquE6sZxiY5gWL94OLLxEDd22sXRAfQ`,

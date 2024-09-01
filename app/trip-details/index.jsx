@@ -26,11 +26,6 @@ export default function TripDetails() {
         trip && setTripDetails(JSON.parse(trip))
     }, [trip])
 
-    console.log('----------- Object.entries(tripDetails) -------')
-    console.log(Object.entries(tripDetails))
-
-    // console.log('----------- tripDetails.tripPlan -------')
-    // console.log(typeof JSON.parse(tripDetails))
 
     return tripDetails && (
         <ScrollView>
@@ -84,11 +79,11 @@ export default function TripDetails() {
 
                 {/* Flight Info  */}
 
-                {/* <FlightInfo flightData={tripDetails?.tripPlan?.travelPlan?.flight} /> */}
+                <FlightInfo flightData={tripDetails?.tripPlan?.travelPlan?.flight} />
                 {/* Hotels List  */}
-                {/* <HotelList hotelList={formatData(tripDetails?.tripPlan)?.travelPlan?.hotels} /> */}
+                <HotelList hotelList={tripDetails?.tripPlan?.travelPlan?.hotels} />
                 {/* Trip Day Planner Info */}
-                {/* <PlannedTrip details={formatData(tripDetails?.tripPlan)?.travelPlan?.itinerary} /> */}
+                <PlannedTrip details={tripDetails?.tripPlan?.travelPlan?.itinerary} />
             </View>
             {/* 
             <View>

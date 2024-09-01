@@ -34,11 +34,6 @@ export default function SelectTraveler() {
   }, [tripData])
 
 
-  // const onSelectTravelerContinue = () => {
-  //   console.log('tripData: ', tripData);
-  //   router.push('/create-trip/select-date')
-  // }
-
   return (
     <View style={{
       padding: 25,

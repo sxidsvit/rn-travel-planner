@@ -28,10 +28,8 @@ export default function GenerateTrip() {
             .replace('{totalDays}', tripData.totalNoOfDays)
             .replace('{totalNight}', tripData.totalNoOfDays - 1);
 
-        console.log(FINAL_PROMPT);
-
         const result = await chatSession.sendMessage(FINAL_PROMPT);
-        const resultJSONText = result.response.text()
+        const resultJSONText = JSON.parse(result.response.text())
         setLoading(false)
         const docId = (Date.now()).toString();
 
