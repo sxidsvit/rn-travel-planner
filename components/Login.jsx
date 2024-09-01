@@ -27,7 +27,7 @@ export default function Login() {
                     fontSize: 17,
                     textAlign: 'center',
                     color: Colors.GRAY,
-                    marginTop: 20
+                    marginTop: 0
                 }}>Discover your next adventure effortlessly. Personalized itineraries at your fingertips. Travel smarter with AI-driven insights."</Text>
 
                 <TouchableOpacity style={styles.button}
@@ -37,7 +37,7 @@ export default function Login() {
                         color: Colors.WHITE,
                         textAlign: 'center',
                         fontFamily: 'outfit',
-                        fontSize: 17
+                        fontSize: 17,
                     }}>Get Started</Text>
                 </TouchableOpacity>
 
@@ -49,7 +49,7 @@ export default function Login() {
 const styles = StyleSheet.create({
     container: {
         backgroundColor: Colors.WHITE,
-        marginTop: -20,
+        marginTop: -30,
         borderTopLeftRadius: 30,
         borderTopRightRadius: 30,
         height: '100%',
@@ -59,6 +59,6 @@ const styles = StyleSheet.create({
         padding: 15,
         backgroundColor: Colors.PRIMARY,
         borderRadius: 99,
-        marginTop: '20%'
+        marginTop: '5%'
     }
 })

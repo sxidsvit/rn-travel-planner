@@ -7,6 +7,7 @@ import { chatSession } from '../../configs/AiModal';
 import { useRouter } from 'expo-router';
 import { doc, setDoc } from 'firebase/firestore';
 import { auth, db } from './../../configs/FirebaseConfig'
+
 export default function GenerateTrip() {
     const { tripData, setTripData } = useContext(CreateTripContext);
     const [loading, setLoading] = useState(false);
@@ -30,29 +31,21 @@ export default function GenerateTrip() {
         console.log(FINAL_PROMPT);
 
         const result = await chatSession.sendMessage(FINAL_PROMPT);
-        console.log(result.response.text());
-        const tripResp = JSON.parse(result.response.text());
+        const resultJSONText = result.response.text()
         setLoading(false)
         const docId = (Date.now()).toString();
+
         const result_ = await setDoc(doc(db, "UserTrips", docId), {
             userEmail: user.email,
-            tripPlan: tripResp,// AI Result 
-            tripData: JSON.stringify(tripData),//User Selection Data
+            tripPlan: resultJSONText,
+            tripData: JSON.stringify(tripData),
             docId: docId
-        }).then(resp=>{
-
-        }).catch(e=>
+        }).then(resp => {
+            console.log('resp: ', resp)
+        }).catch(e =>
             console.log(e)
         )
-
-
         router.push('(tabs)/mytrip');
-
-
-
-
-
-
     }
 
     return (

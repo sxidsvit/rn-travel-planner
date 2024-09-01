@@ -36,7 +36,6 @@ export default function SignUp() {
       .then((userCredential) => {
         // Signed up 
         const user = userCredential.user;
-        console.log(user);
         router.replace('/mytrip')
         // ...
       })

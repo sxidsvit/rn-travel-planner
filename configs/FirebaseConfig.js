@@ -4,7 +4,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 
-// import { getAnalytics } from "firebase/analytics";
+// import { getAnalytics } from "firebase/analytics"; 
 
 
 const apiKey = process.env.FIREBASE_API_KEY

@@ -23,7 +23,6 @@ export default function SelectTimeRange() {
 
 
   const onDateChange = (date, type) => {
-    console.log(date, type);
     if (type == 'START_DATE') {
       setStartDate(moment(date))
     }
@@ -40,7 +39,6 @@ export default function SelectTimeRange() {
       return;
     }
     const totalNoOfDays = endDate.diff(startDate, 'days');
-    console.log(totalNoOfDays + 1);
     setTripData({
       ...tripData,
       startDate: startDate,
