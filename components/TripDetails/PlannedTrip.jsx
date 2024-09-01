@@ -16,7 +16,7 @@ export default function PlannedTrip({ details }) {
 
 
       {Object.entries(details).reverse().map(([day, details]) => (
-        <View >
+        <View key={day}>
           <Text style={{
             fontFamily: 'outfit-medium',
             fontSize: 20,

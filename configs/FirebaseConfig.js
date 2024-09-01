@@ -3,15 +3,8 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
-
-// import { getAnalytics } from "firebase/analytics"; 
-
-
-const apiKey = process.env.FIREBASE_API_KEY
-console.log('FIREBASE_API_KEY - apiKey: ', apiKey);
-
 const firebaseConfig = {
-  apiKey: `AIzaSyB1YquE6sZxiY5gWL94OLLxEDd22sXRAfQ`,
+  apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY,
   authDomain: "asp-ads.firebaseapp.com",
   databaseURL: "https://asp-ads.firebaseio.com",
   projectId: "asp-ads",
