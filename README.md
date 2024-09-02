@@ -1,50 +1,28 @@
-# Welcome to your Expo app 👋
+## React Native for travel planning
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+###  AI Travel Planner App using Expo, Gemini, and Firebase
 
-## Get started
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+![](demo.gif)
 
-2. Start the app
+---
 
-   ```bash
-    npx expo start
-   ```
+### Tech Stack
 
-In the output, you'll find options to open the app in a
+- [React Native](https://reactnative.dev/)
+- [Expo Go](https://docs.expo.dev/)
+- [Gemini](https://ai.google.dev/gemini-api)
+- [Firebase](https://firebase.google.com/)
+- [Expo Router](https://docs.expo.dev/router/introduction/)
+- [React Nnative Calendar Picker](https://www.npmjs.com/package/react-native-calendar-picker)
+- [Expo Vector Icons](https://www.npmjs.com/package/@expo/vector-icons)
+- [TypeScript](https://www.typescriptlang.org/) 
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+##### Contact with me:
 
-## Get a fresh project
+[<img alt="webDev | LinkedIn" src="https://img.shields.io/badge/linkedin-0077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />][linkedin]
 
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+[linkedin]: https://www.linkedin.com/in/sergiy-antonyuk/
